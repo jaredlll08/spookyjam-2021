@@ -1,0 +1,29 @@
+{
+  "name": "spookyjam-2021",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "analyze-build": "cross-envANALYZE=true next build"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^11.0.1",
+    "next": "11.0.1",
+    "preact": "^10.5.14",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.16",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "11.0.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.3.5"
+  }
+}
