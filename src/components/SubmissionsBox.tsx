@@ -12,7 +12,7 @@ export default function SubmissionBox({ children, name, entries }: React.PropsWi
 
     useEffect(() => {
         shuffleArray(entries)
-    }, [])
+    }, [entries])
 
     return (
         <div className="mb-12">
@@ -34,7 +34,7 @@ export default function SubmissionBox({ children, name, entries }: React.PropsWi
     );
 }
 
-function shuffleArray(array: any[]) {
+function shuffleArray(array: ModProps[]) {
 
     if (!array) { return array; }
 

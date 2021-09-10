@@ -10,7 +10,7 @@ export default function Navbar(): JSX.Element {
             <NavLink title="Submissions" location="/submissions" />
         </div>
 
-        <img className="h-11 my-2" src="/nav_header.png"></img>
+        <img className="h-11 my-2" src="/nav_header.png" alt={`nav-header`}/>
 
         <div className={`flex flex-row-reverse px-4 w-full my-auto gap-x-6 text-xl font-bold`}>
 

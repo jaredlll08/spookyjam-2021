@@ -1,7 +1,7 @@
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
-import React, { ReactElement, ReactNode } from "react";
+import {GetStaticPropsResult} from "next";
+import React, {ReactElement} from "react";
 import Layout from "../components/Layout";
-import { ModProps } from "../components/CurseMod";
+import {ModProps} from "../components/CurseMod";
 import SubmissionBox from "components/SubmissionsBox";
 import axios from 'axios';
 import NavLink from "../components/NavLink";
@@ -98,13 +98,6 @@ type CurseStub = {
     attachments: { isDefault: boolean, url: string }[];
 }
 
-function shuffleArray(array: any[]) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
 async function fetchModData(curseId: number): Promise<ModProps> {
 
     return axios.get<CurseStub>(`https://addons-ecs.forgesvc.net/api/v2/addon/${curseId}`).then(res => {
@@ -139,37 +132,37 @@ interface StaticProps {
     nineteen: ModProps[]
     eighteen: ModProps[]
     seventeen: ModProps[]
-};
+}
 
-export async function getStaticProps(context: GetStaticPropsContext): Promise<GetStaticPropsResult<StaticProps>> {
+export async function getStaticProps(): Promise<GetStaticPropsResult<StaticProps>> {
 
-    var mods2021: ModProps[] = [];
+    const mods2021: ModProps[] = [];
 
-    for (let id of projectIds.twentyone) {
+    for (const id of projectIds.twentyone) {
         mods2021.push(await fetchModData(id));
     }
 
-    var mods2020: ModProps[] = [];
+    const mods2020: ModProps[] = [];
 
-    for (let id of projectIds.twenty) {
+    for (const id of projectIds.twenty) {
         mods2020.push(await fetchModData(id));
     }
 
-    var mods2019: ModProps[] = [];
+    const mods2019: ModProps[] = [];
 
-    for (let id of projectIds.nineteen) {
+    for (const id of projectIds.nineteen) {
         mods2019.push(await fetchModData(id));
     }
 
-    var mods2018: ModProps[] = [];
+    const mods2018: ModProps[] = [];
 
-    for (let id of projectIds.eightteen) {
+    for (const id of projectIds.eightteen) {
         mods2018.push(await fetchModData(id));
     }
 
-    var mods2017: ModProps[] = [];
+    const mods2017: ModProps[] = [];
 
-    for (let id of projectIds.seventeen) {
+    for (const id of projectIds.seventeen) {
         mods2017.push(await fetchModData(id));
     }
 
