@@ -107,7 +107,7 @@ function shuffleArray(array: any[]) {
 
 async function fetchModData(curseId: number): Promise<ModProps> {
 
-    return axios.get(`https://addons-ecs.forgesvc.net/api/v2/addon/${curseId}`).then(res => {
+    return axios.get<CurseStub>(`https://addons-ecs.forgesvc.net/api/v2/addon/${curseId}`).then(res => {
         return {
             name: res.data.name,
             author: res.data.authors.map(auth => {
