@@ -7,7 +7,7 @@ export default function Layout({children}: React.PropsWithChildren<unknown>): Re
         <header>
             <Navbar/>
         </header>
-        <main className = {``}>
+        <main className = {`flex-grow flex justify-center bg-[#1F1F1F] spooky`}>
             {children}
         </main>
     </div>;

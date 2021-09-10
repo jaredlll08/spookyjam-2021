@@ -4,12 +4,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
     reactStrictMode: true,
     images: {
-        domains: [],
+        domains: ['media.forgecdn.net']
     },
     eslint: {
         dirs: ['src'],
     },
-    webpack: (config, {dev, isServer}) => {
+    webpack: (config, { dev, isServer }) => {
         if (!dev && !isServer) {
             // Replace React with Preact only in client production build
             Object.assign(config.resolve.alias, {
