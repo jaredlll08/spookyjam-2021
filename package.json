@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "analyze-build": "cross-envANALYZE=true next build"
+    "analyze-build": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^11.1.2",
