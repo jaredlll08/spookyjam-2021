@@ -1,19 +1,24 @@
+import { useState } from "react";
 import NavLink from "./NavLink";
 
 export default function Navbar(): JSX.Element {
 
-    return <nav className={`bg-gray-900 p-2 px-16 text-white w-full`}>
+    let isExpanded = false;
 
-        <div className='hidden lg:grid lg:grid-cols-3 w-full'>
-            <div className={`flex px-4 my-auto gap-x-6 text-xl font-bold`}>
+    const [expanded, setExpanded] = useState(isExpanded);
+
+    return <nav className={`bg-gray-900 text-white w-full`}>
+
+        <div className='hidden sm:grid sm:grid-cols-3 w-full px-16 py-4'>
+            <div className={`flex px-4 gap-x-6 text-xl font-bold`}>
                 <NavLink title="Home" location="/" />
                 <NavLink title="Rules" location="/rules" />
                 <NavLink title="Submissions" location="/submissions" />
             </div>
 
-            <img className="h-11 my-2 mx-auto" src="/nav_header.png" alt={`nav-header`} />
+            <img className="mx-auto h-10" src="/nav_header.png" alt={`nav-header`} />
 
-            <div className={`flex ml-auto px-4 my-auto gap-x-6 text-xl font-bold`}>
+            <div className={`flex ml-auto px-4 gap-x-6 text-xl font-bold`}>
 
                 <NavLink title="GitHub" location="https://github.com/MinecraftModDevelopmentMods" />
                 <NavLink title="Twitter" location="https://twitter.com/mcmoddev" />
@@ -23,16 +28,23 @@ export default function Navbar(): JSX.Element {
 
         <div className='lg:hidden'>
 
-            <img className="h-11 my-2" src="/nav_header.png" alt={`nav-header`} />
+            <div className='flex justify-between p-3 px-4'>
 
-            <div className={`text-xl font-bold`}>
+                <img className="w-4/5 h-full my-auto" src="/nav_header.png" alt={`nav-header`} />
+
+                <svg className="w-9 h-9 text-yellow-700 border-2 rounded-lg border-yellow-700" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onClick={() => setExpanded(!expanded)}>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </div>
+
+            {expanded && <div className={`py-1 font-bold text-center bg-gray-800`}>
                 <NavLink title="Home" location="/" />
                 <NavLink title="Rules" location="/rules" />
                 <NavLink title="Submissions" location="/submissions" />
                 <NavLink title="Discord" location="https://discord.mcmoddev.com/" />
                 <NavLink title="Twitter" location="https://twitter.com/mcmoddev" />
                 <NavLink title="GitHub" location="https://github.com/MinecraftModDevelopmentMods" />
-            </div>
+            </div>}
         </div>
     </nav>;
 
