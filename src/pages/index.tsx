@@ -4,11 +4,8 @@ import Countdown, { CountdownRenderProps } from 'react-countdown';
 
 export default function Home(): ReactElement {
 
-    return <Layout>
-        <div className="w-4/6 bg-gray-800 p-8 mt-12 text-gray-200 text-xl">
-
-            <h1 className="text-5xl mb-5 text-gray-100">Spooky Jam 2021</h1>
-
+    return <Layout title = "SpookyJam 2021">
+        <div className="">
             <p>
                 Welcome to SpookyJam! This is MMD's annual fall celebration for the modded Minecraft community. During October we host a mod jam where members of the community are encouraged to create new mods that fit the seasonal vibe. Participants are encouraged to collaborate, explore new skills, and challenge themselves. During SpookyJam we also host a public Minecraft server where anyone can join and check out the valid mod jam submissions.
             </p>
@@ -24,32 +21,32 @@ function renderCountdown(props: CountdownRenderProps): ReactNode {
 
     return (
 
-        <div className="inline-flex p-4 gap-x-4 w-auto text-center bg-yellow-700">
+        <div className="inline-flex w-auto text-center">
 
-            <div className="w-1/4">
-                <p className = "text-5xl">{props.days}</p>
+            <div className="w-2/12">
+                <p className = "lg:text-5xl sm:text-xs">{props.days}</p>
                 <p>Days</p>
             </div>
 
-            <p className="text-6xl">|</p>
+            <p className="md:text-6xl">|</p>
 
 
-            <div className="w-1/4">
-                <p className = "text-5xl">{props.hours}</p>
+            <div className="w-2/12">
+                <p className = "lg:text-5xl sm:text-xs">{props.hours}</p>
                 <p>Hours</p>
             </div>
 
-            <p className="text-6xl">|</p>
+            <p className="md:text-6xl">|</p>
 
-            <div className="w-1/4">
-                <p className = "text-5xl">{props.minutes}</p>
+            <div className="w-2/12">
+                <p className = "lg:text-5xl sm:text-xs">{props.minutes}</p>
                 <p>Minutes</p>
             </div>
 
-            <p className="text-6xl">|</p>
+            <p className="md:text-6xl">|</p>
 
-            <div className="w-1/4">
-                <p className = "text-5xl">{props.seconds}</p>
+            <div className="w-2/12">
+                <p className = "lg:text-5xl sm:text-xs">{props.seconds}</p>
                 <p>Seconds</p>
             </div>
         </div>

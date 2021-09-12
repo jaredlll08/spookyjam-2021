@@ -15,15 +15,15 @@ export default function SubmissionBox({ children, name, entries }: React.PropsWi
     }, [entries])
 
     return (
-        <div className="mb-12">
+        <div className="mb-6 sm:mb-12 p-2 w-full">
 
-            <h2 className="text-3xl text-gray-100 mb-6" id={name}>{name}</h2>
+            <h2 className="text-2xl sm:text-3xl text-gray-100 mb-2 sm:mb-6" id={name}>{name}</h2>
 
-            <div className="ml-2">
+            <div className="">
                 {children}
             </div>
 
-            <div className="grid grid-cols-2 gap-y-5 gap-x-6 ml-2 mt-6">
+            <div className="grid sm:grid-cols-2 gap-y-5 sm:gap-x-6 mt-6">
 
                 {
                     (entries || []).map(mod => (<ModCard modData={mod} key={mod.name} />))

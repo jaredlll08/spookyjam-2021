@@ -69,14 +69,12 @@ const projectIds = {
 export default function Home(props: StaticProps): ReactElement {
 
     return (
-        <Layout>
-            <div className="w-4/6 bg-gray-800 p-8 mt-12 text-gray-200 text-xl flex flex-col gap-y-5">
-
-                <h1 className="text-5xl text-gray-100">Submissions</h1>
+        <Layout title = "Submissions">
+            <div className="bg-gray-800 text-gray-200 text-xl flex flex-col gap-y-5">
 
                 <SubmissionBox name = "2021" entries = {props.twentyone }>
-                    <p>
-                        Submissions for our 2021 event will be open from October 1st until October 31st. You can submit your project <NavLink title = "here" location = "https://forms.gle/mkKt2TC8PdpVbzVx9"/>.
+                    <p className='text-base sm:text-2xl'>
+                        Submissions for our 2021 event will be open from October 1st until October 31st. You can submit your project <NavLink title = "here" location = "https://forms.gle/mkKt2TC8PdpVbzVx9" inline={true}/>.
                     </p>
                 </SubmissionBox>
 
