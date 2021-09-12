@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export interface LayoutProps {
 
-    title: String
+    title: string
 }
 
 export default function Layout({ children, title }: React.PropsWithChildren<LayoutProps>): ReactElement {
