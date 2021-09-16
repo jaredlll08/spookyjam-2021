@@ -24,7 +24,7 @@ export default function Navbar(): JSX.Element {
             </div>
         </div>
 
-        <div className='lg:hidden'>
+        <div className='sm:hidden'>
 
             <div className='flex justify-between p-3 px-4'>
 
