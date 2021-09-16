@@ -33,7 +33,7 @@ export default function Navbar(): JSX.Element {
                 <img className="w-4/5 h-full my-auto" src="/nav_header.png" alt={`nav-header`} />
 
                 <svg className="w-9 h-9 text-yellow-700 border-2 rounded-lg border-yellow-700" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onClick={() => setExpanded(!expanded)}>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </div>
 
