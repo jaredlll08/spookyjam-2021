@@ -4,9 +4,7 @@ import Countdown, { CountdownRenderProps } from 'react-countdown';
 export default function TimeTable(): ReactElement {
 
     return (
-        <div id = "timetable">
-
-            <h2 className="text-2xl lg:text-4xl mb-3 sm:mb-5 text-gray-100">Event Timetable</h2>
+        <div>
 
             <table className='table-fixed border w-full text-base sm:text-lg'>
                 <thead>
