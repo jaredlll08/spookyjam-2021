@@ -3,9 +3,7 @@ import NavLink from "./NavLink";
 
 export default function Navbar(): JSX.Element {
 
-    let isExpanded = false;
-
-    const [expanded, setExpanded] = useState(isExpanded);
+    const [expanded, setExpanded] = useState(false);
 
     return <nav className={`bg-gray-900 text-white w-full`}>
 
