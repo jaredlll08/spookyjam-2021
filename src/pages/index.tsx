@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode } from "react";
 import Layout from "../components/Layout";
+import NavLink from "components/NavLink";
 import TimeTableLoader from '../components/timetable_loader'
 
 export default function Home(): ReactElement {
@@ -57,13 +58,31 @@ export default function Home(): ReactElement {
                 <li>Aesthetic - Awarded to the submission that looks the best visually.</li>
                 <li>Creepy - Awarded to the creepiest submission.</li>
                 <li>Integration (Existing) - Awarded to the submission with the best integration with existing mods.</li>
-                <li>Integration (SpookyJam) - Awarded to the submission with the best integreation with other SpookyJam entries.</li>
+                <li>Integration (SpookyJam) - Awarded to the submission with the best integration with other SpookyJam entries.</li>
             </ol>
         </div>
 
         <div id='faq'>
 
             <h2 className="text-2xl sm:text-4xl mb-3 sm:mb-5 text-gray-100">Frequently Asked Questions</h2>
+
+            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I submit multiple mods to this event?</h3>
+            <p>Yes, you may create and submit multiple submissions to this event. If you are interested in doing this please take care of yourself and take steps to avoid stress and burnout.</p>
+
+            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I join multiple teams??</h3>
+            <p>Yes, you may join and contribute to multiple teams. If you are interested in doing this we recommend being transparent with all of your team mates about other teams you are contributing to.</p>
+
+            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I submit the same mod for both Forge and Fabric?</h3>
+            <p>Yes, you may support both Forge and Fabric with your submission. These submissions will be eligible for the Top 3 Forge and Top 3 Fabric categories but may only place in one of those categories. Please be advised that supporting both loaders is completely optional. Doing so will require additional effort and may be stressful. If you're still interested in doing this we recommend checking out the useful <NavLink title='MultiLoader-Template' location='https://github.com/jaredlll08/MultiLoader-Template' inline={true}/>.</p>
+
+            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>I am not a mod author, how can I participate?</h3>
+            <p>Everyone is welcome to participate in SpookyJam. One of the easiest ways to join in is by giving participants feedback and encouragement or play with the mods on the public event Minecraft server. If you're looking to get more involved with the event you may be able to help with translating submissions, helping with textures, or contributing in other ways. SpookyJam is also a great opportunity to learn more about mod development and try to make your own mod.</p>
+
+            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I submit a mod from previous SpookyJam events?</h3>
+            <p>Yes, previous year entries that have been updated can be resubmitted. These entries will not be eligible for prizes and will not receive the same level of promotion that new submissions receive however they may be included on our Modpack and public server.</p>
+
+            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Do Pull Requests count as being a team member?</h3>
+            <p>Creating a Pull Request does not inherently make you a member of that team. The team list is ultimately up to that team and the member who is submitting their submission. The main time event organizers will step in is when the Pull Request System is being abused to bypass event rules.</p>
         </div>
     </Layout>
 }
