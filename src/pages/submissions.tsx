@@ -77,7 +77,6 @@ export default function Home(props: StaticProps): ReactElement {
                         Submissions for our 2021 event will be open from October 1st until October 31st. You can submit your project <NavLink title = "here" location = "https://forms.gle/mkKt2TC8PdpVbzVx9" inline={true}/>.
                     </p>
                 </SubmissionBox>
-
                 <SubmissionBox name = "2020" entries = { props.twenty } />
                 <SubmissionBox name = "2019" entries = { props.nineteen } />
                 <SubmissionBox name = "2018" entries = { props.eighteen } />

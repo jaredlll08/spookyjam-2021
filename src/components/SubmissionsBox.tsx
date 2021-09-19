@@ -17,7 +17,7 @@ export default function SubmissionBox({ children, name, entries }: React.PropsWi
     return (
         <div className="mb-6 sm:mb-12 p-2 w-full">
 
-            <h2 className="text-2xl sm:text-3xl text-gray-100 mb-2 sm:mb-6" id={name}>{name}</h2>
+            <h2 className="mt-0" id={name}>{name}</h2>
 
             <div className="">
                 {children}

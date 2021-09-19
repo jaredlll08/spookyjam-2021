@@ -16,15 +16,15 @@ export default function Home(): ReactElement {
         <br />
 
         <div id='timetable'>
-            <h2 className="text-2xl lg:text-4xl mb-3 sm:mb-5 text-gray-100">Event Timetable</h2>
+            <h2>Event Timetable</h2>
             <TimeTableLoader />
         </div>
 
         <br />
 
         <div id='rules'>
-            <h2 className="text-2xl lg:text-4xl mb-3 sm:mb-5 text-gray-100">Rules</h2>
-            <ol className='list-decimal ml-8 space-y-2'>
+            <h2>Rules</h2>
+            <ol className='list-decimal'>
                 <li>Submissions must only be developed from October 1st to October 31st UTC. You may come up with ideas and plan your project in advance, but all code, assets, textures, sounds, and models must be made during the specified time.</li>
                 <li>Submissions should fit with the broader themes of SpookyJam. These themes include anything that is spooky, dark, or mysterious. Anything that fits with the autumn/fall season is also included.</li>
                 <li>Submissions must load on clients and dedicated servers without crashing the game. Targeting only one of these environments is fine as long as loading in an unsupported environment does not crash the game or cause the game to be unplayable.</li>
@@ -37,22 +37,24 @@ export default function Home(): ReactElement {
             </ol>
         </div>
 
+        <br />
+
         <div id='rewards-and-prizes'>
-            <h2 className="text-2xl sm:text-4xl mt-3 sm:mt-6 text-gray-100">Rewards and Prizes</h2>
+            <h2>Rewards and Prizes</h2>
             <p>There will be twelve cash prizes awarded to eligible submissions as part of this event. The winners will be determined by a panel of judges composed of members of the MMD team and event sponsors.</p>
 
-            <h3 className='text-xl sm:text-2xl my-2 sm:my-3 text-gray-100'>Top 3 Submissions</h3>
+            <h3>Top 3 Submissions</h3>
 
             <p>The top three Forge submissions and the top three Fabric submissions will be awarded the following prizes. Submissions that are compatible with both loaders will be considered for both categories however they may only win one category.</p>
-            <ol className='list-disc ml-12 mt-4 space-y-2'>
+            <ol className='list-disc'>
                 <li>1st Place - $200 USD</li>
                 <li>2nd Place - $100 USD</li>
                 <li>3rd Place - $50 USD</li>
             </ol>
 
-            <h3 className='text-xl sm:text-2xl my-2 sm:my-3 text-gray-100'>Bonus Prizes</h3>
+            <h3>Bonus Prizes</h3>
             <p>In addition to the prizes for top 3 submissions there are six $50 USD bonus prizes. These prizes are awarded based on specific criteria and may be awarded to any eligible submission including one that received a top 3 prize.</p>
-            <ol className='list-disc ml-12 mt-4 space-y-2'>
+            <ol className='list-disc'>
                 <li>Originality - Awarded to the most fresh and original submission.</li>
                 <li>Utility - Awarded to the submission that is the most useful in a wide variety of circumstances.</li>
                 <li>Aesthetic - Awarded to the submission that looks the best visually.</li>
@@ -62,26 +64,28 @@ export default function Home(): ReactElement {
             </ol>
         </div>
 
+        <br />
+
         <div id='faq'>
 
-            <h2 className="text-2xl sm:text-4xl mb-3 sm:mb-5 text-gray-100">Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions</h2>
 
-            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I submit multiple mods to this event?</h3>
+            <h4 className='mb-0 mt-4'>Can I submit multiple mods to this event?</h4>
             <p>Yes, you may create and submit multiple submissions to this event. If you are interested in doing this please take care of yourself and take steps to avoid stress and burnout.</p>
 
-            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I join multiple teams??</h3>
+            <h4 className='mb-0 mt-4'>Can I join multiple teams?</h4>
             <p>Yes, you may join and contribute to multiple teams. If you are interested in doing this we recommend being transparent with all of your team mates about other teams you are contributing to.</p>
 
-            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I submit the same mod for both Forge and Fabric?</h3>
-            <p>Yes, you may support both Forge and Fabric with your submission. These submissions will be eligible for the Top 3 Forge and Top 3 Fabric categories but may only place in one of those categories. Please be advised that supporting both loaders is completely optional. Doing so will require additional effort and may be stressful. If you're still interested in doing this we recommend checking out the useful <NavLink title='MultiLoader-Template' location='https://github.com/jaredlll08/MultiLoader-Template' inline={true}/>.</p>
+            <h4 className='mb-0 mt-4'>Can I submit the same mod for both Forge and Fabric?</h4>
+            <p>Yes, you may support both Forge and Fabric with your submission. These submissions will be eligible for the Top 3 Forge and Top 3 Fabric categories but may only place in one of those categories. Please be advised that supporting both loaders is completely optional. Doing so will require additional effort and may be stressful. If you're still interested in doing this we recommend checking out the useful <NavLink title='MultiLoader-Template' location='https://github.com/jaredlll08/MultiLoader-Template' inline={true} />.</p>
 
-            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>I am not a mod author, how can I participate?</h3>
+            <h4 className='mb-0 mt-4'>I am not a mod author, how can I participate?</h4>
             <p>Everyone is welcome to participate in SpookyJam. One of the easiest ways to join in is by giving participants feedback and encouragement or play with the mods on the public event Minecraft server. If you're looking to get more involved with the event you may be able to help with translating submissions, helping with textures, or contributing in other ways. SpookyJam is also a great opportunity to learn more about mod development and try to make your own mod.</p>
 
-            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Can I submit a mod from previous SpookyJam events?</h3>
+            <h4 className='mb-0 mt-4'>Can I submit a mod from previous SpookyJam events?</h4>
             <p>Yes, previous year entries that have been updated can be resubmitted. These entries will not be eligible for prizes and will not receive the same level of promotion that new submissions receive however they may be included on our Modpack and public server.</p>
 
-            <h3 className='text-xl sm:text-3xl mb-3 sm:mb-5'>Do Pull Requests count as being a team member?</h3>
+            <h4 className='mb-0 mt-4'>Do Pull Requests count as being a team member?</h4>
             <p>Creating a Pull Request does not inherently make you a member of that team. The team list is ultimately up to that team and the member who is submitting their submission. The main time event organizers will step in is when the Pull Request System is being abused to bypass event rules.</p>
         </div>
     </Layout>

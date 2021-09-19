@@ -20,7 +20,7 @@ export default function Layout({ children, title }: React.PropsWithChildren<Layo
 
                 <div className='sm:p-8 p-4 bg-gray-800 text-gray-200 text-lg sm:text-xl'>
 
-                    <h1 className="text-3xl lg:text-5xl mb-3 sm:mb-5 text-gray-100">{title}</h1>
+                    <h1 className="">{title}</h1>
                     {children}
                 </div>
             </div>
