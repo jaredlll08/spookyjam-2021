@@ -16,9 +16,9 @@ export default function Layout({ children, title }: React.PropsWithChildren<Layo
 
         <main className={`flex-grow flex justify-center bg-[#1F1F1F] spooky`}>
 
-            <div className='w-[96%] sm:w-4/6 mt-2 sm:mt-12'>
+            <div className='w-[96%] xl:w-4/6 mt-2 xl:mt-12'>
 
-                <div className='sm:p-8 p-4 bg-gray-800 text-gray-200 text-lg sm:text-xl'>
+                <div className='xl:p-8 p-4 bg-gray-800 text-gray-200 text-lg xl:text-xl'>
 
                     <h1 className="">{title}</h1>
                     {children}

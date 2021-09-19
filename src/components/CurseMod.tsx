@@ -30,12 +30,12 @@ export default function ModCard({modData} : {modData:ModProps}): ReactElement {
     return (
         <div className="flex gap-x-4 p-2 border-2 border-yellow-700 bg-yellow-900 bg-opacity-25">
 
-            <img src={modData.logo} className="hidden sm:block flex-none w-32 h-32 my-auto bg-[#1F1F1F] border border-yellow-700" width="128px" height="128px" alt={modData.name}/>
+            <img src={modData.logo} className="hidden lg:block flex-none w-32 h-32 my-auto bg-[#1F1F1F] border border-yellow-700" width="128px" height="128px" alt={modData.name}/>
 
             <div className="flex-grow">
-                <a className="text-xl sm:text-3xl hover:text-yellow-600 font-medium" href={modData.homepage} target={"_blank"} rel="noreferrer">{truncate(modData.name, 25)}</a>
-                <p className="text-lg sm:text-xl">{"By "} {modData.author.map((val: Author, index) => <Author author={val} index={index} key={val.name}/>)}</p>
-                <p className="text-sm sm:text-lg">{truncate(modData.summary)}</p>
+                <a className="text-xl sm:text-2xl lg:text-3xl hover:text-yellow-600 font-medium" href={modData.homepage} target={"_blank"} rel="noreferrer">{truncate(modData.name, 25)}</a>
+                <p className="text-lg lg:text-xl">{"By "} {modData.author.map((val: Author, index) => <Author author={val} index={index} key={val.name}/>)}</p>
+                <p className="text-sm sm:text-base lg:text-lg">{truncate(modData.summary)}</p>
             </div>
         </div>
     );

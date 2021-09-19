@@ -7,7 +7,7 @@ export default function Navbar(): JSX.Element {
 
     return <nav className={`bg-gray-900 text-white w-full`}>
 
-        <div className='hidden sm:grid sm:grid-cols-3 w-full px-16 py-4'>
+        <div className='hidden lg:grid sm:grid-cols-3 w-full px-16 py-4'>
             <div className={`flex px-4 gap-x-6 text-xl font-bold`}>
                 <NavLink title="Home" location="/" />
                 <NavLink title="Rules" location="/rules" />
@@ -24,7 +24,7 @@ export default function Navbar(): JSX.Element {
             </div>
         </div>
 
-        <div className='sm:hidden'>
+        <div className='lg:hidden'>
 
             <div className='flex justify-between p-3 px-4'>
 
