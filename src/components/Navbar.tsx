@@ -10,7 +10,6 @@ export default function Navbar(): JSX.Element {
         <div className='hidden lg:grid sm:grid-cols-3 w-full px-16 py-4'>
             <div className={`flex px-4 gap-x-6 text-xl font-bold`}>
                 <NavLink title="Home" location="/" />
-                <NavLink title="Rules" location="/rules" />
                 <NavLink title="Submissions" location="/submissions" />
             </div>
 
@@ -37,7 +36,6 @@ export default function Navbar(): JSX.Element {
 
             {expanded && <div className={`py-1 font-bold text-center bg-gray-800`}>
                 <NavLink title="Home" location="/" />
-                <NavLink title="Rules" location="/rules" />
                 <NavLink title="Submissions" location="/submissions" />
                 <NavLink title="Discord" location="https://discord.mcmoddev.com/" />
                 <NavLink title="Twitter" location="https://twitter.com/mcmoddev" />
