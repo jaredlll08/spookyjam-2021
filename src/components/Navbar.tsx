@@ -9,17 +9,17 @@ export default function Navbar(): JSX.Element {
 
         <div className='hidden lg:grid sm:grid-cols-3 w-full px-16 py-4'>
             <div className={`flex px-4 gap-x-6 text-xl font-bold`}>
-                <NavLink title="Home" location="/" />
-                <NavLink title="Submissions" location="/submissions" />
+                <NavLink classNames='my-auto' title="Home" location="/" />
+                <NavLink classNames='my-auto' title="Submissions" location="/submissions" />
             </div>
 
             <img className="mx-auto h-10" src="/nav_header.png" alt={`nav-header`} />
 
             <div className={`flex ml-auto px-4 gap-x-6 text-xl font-bold`}>
 
-                <NavLink title="GitHub" location="https://github.com/MinecraftModDevelopmentMods" />
-                <NavLink title="Twitter" location="https://twitter.com/mcmoddev" />
-                <NavLink title="Discord" location="https://discord.mcmoddev.com/" />
+                <NavLink classNames='my-auto' title="GitHub" location="https://github.com/MinecraftModDevelopmentMods" />
+                <NavLink classNames='my-auto' title="Twitter" location="https://twitter.com/mcmoddev" />
+                <NavLink classNames='my-auto' title="Discord" location="https://discord.mcmoddev.com/" />
             </div>
         </div>
 
