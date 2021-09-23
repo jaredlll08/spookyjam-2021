@@ -2,6 +2,7 @@ import React, { ReactElement, ReactNode } from "react";
 import Layout from "../components/Layout";
 import NavLink from "components/NavLink";
 import TimeTableLoader from '../components/timetable_loader'
+import Sponsor from "components/Sponsor";
 
 export default function Home(): ReactElement {
 
@@ -41,7 +42,7 @@ export default function Home(): ReactElement {
 
         <div id='rewards-and-prizes'>
             <h2>Rewards and Prizes</h2>
-            <p>There will be twelve cash prizes awarded to eligible submissions as part of this event. The winners will be determined by a panel of judges composed of members of the MMD team and event sponsors.</p>
+            <p>There will be twelve cash prizes awarded to eligible submissions. The winners will be determined by a panel of judges composed of MMD team members and event sponsors. This event is sponsored by <NavLink title='CurseForge' location='https://www.curseforge.com/' inline={true} /> who has provided the prize pool for this event.</p>
 
             <h3>Top 3 Submissions</h3>
 
@@ -87,6 +88,16 @@ export default function Home(): ReactElement {
 
             <h4 className='mb-0 mt-4'>Do Pull Requests count as being a team member?</h4>
             <p>Creating a Pull Request does not inherently make you a member of that team. The team list is ultimately up to that team and the member who is submitting their submission. The main time event organizers will step in is when the Pull Request System is being abused to bypass event rules.</p>
+        </div>
+
+        <div id='sponsors'>
+            <h2>Sponsors</h2>
+
+            <div className='grid sm:grid-cols-4 gap-y-5 sm:gap-x-6 mt-6 p-4 text-lg'>
+                <Sponsor name='CurseForge' logo='./sponsor_curseforge.png' link='https://www.curseforge.com/?spookyjam2021' description='CurseForge provides hosting for mods, addons, and user content for many popular games such as Minecraft and World of Warcraft.' />
+                <Sponsor name='Nodecraft' logo='./sponsor_nodecraft.png' link='https://nodecraft.com/r/mmd' description='Nodecraft offers quality server hosting for many games such as Minecraft, Rust, and Factorio.' />
+                <Sponsor name='MMD' logo='./sponsor_mmd.png' link='https://discord.mcmoddev.com/' description='Minecraft Mod Development is a safe community for mod authors to learn, improve their skills, and share their work.'/>
+            </div>
         </div>
     </Layout>
 }
