@@ -12,9 +12,9 @@ export default function Home(): ReactElement {
             <NextSeo
                 title="SpookyJam 2021"
                 description="An annual ModJam held in celebration of the fall season. Hosted by MMD."
-                canonical="https://mcmoddev.com"
+                canonical="https://spookyjam.mcmoddev.com"
                 openGraph={{
-                    url: 'https://mcmoddev.com',
+                    url: 'https://spookyjam.mcmoddev.com',
                     title: 'SpookyJam 2021',
                     description: 'An annual ModJam held in celebration of the fall season. Hosted by MMD.',
                     site_name: 'SpookyJam 2021',
