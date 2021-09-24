@@ -8,7 +8,7 @@ import NavLink from "../components/NavLink";
 
 const projectIds = {
 
-    twentyone: [238222, 32274],
+    twentyone: [],
 
     twenty: [
         410697,
