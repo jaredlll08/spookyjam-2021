@@ -114,6 +114,12 @@ export default function Home(): ReactElement {
 
                     <h4 className='mb-0 mt-4'>Do Pull Requests count as being a team member?</h4>
                     <p>Creating a Pull Request does not inherently make you a member of that team. The team list is ultimately up to that team and the member who is submitting their submission. The main time event organizers will step in is when the Pull Request System is being abused to bypass event rules.</p>
+
+                    <h4 className='mb-0 mt-4'>Would accepting a Pull Request from an ineligible person make my project ineligible for prizes?</h4>
+                    <p>Accepting minor Pull Requests from an ineligible person is fine. A minor Pull Request in this context would be along the lines of fixing a typo, resource optimization, or localizing the mod to another language.</p>
+
+                    <h4 className='mb-0 mt-4'>Does the mod need to be published on CurseForge?</h4>
+                    <p>We are only accepting mods that have been published to CurseForge. Having this requirement allows us to streamline the process of publishing the modpack and having players connect to our servers.</p>
                 </div>
 
                 <div id='sponsors'>
