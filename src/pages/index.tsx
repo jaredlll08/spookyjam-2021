@@ -23,6 +23,13 @@ export default function Home(): ReactElement {
                     handle: '@MCModDev',
                     cardType: 'summary_large_image',
                 }}
+
+                additionalMetaTags={[
+                    {
+                        name: 'theme-color',
+                        content: '#a16207'
+                    }
+                ]}
             />
 
             <Layout title="SpookyJam 2021">
