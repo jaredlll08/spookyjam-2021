@@ -126,7 +126,7 @@ export default function Home(): ReactElement {
                     <h2>Sponsors</h2>
 
                     <div className='grid sm:grid-cols-4 gap-y-5 sm:gap-x-6 mt-6 p-4 text-lg'>
-                        <Sponsor name='CurseForge' logo='./sponsor_curseforge.png' link='https://www.curseforge.com/?spookyjam2021' description='CurseForge provides hosting for mods, addons, and user content for many popular games such as Minecraft and World of Warcraft.' />
+                        <Sponsor name='CurseForge' logo='./sponsor_curseforge.png' link='https://www.curseforge.com/?spookyjam2021' description='CurseForge provides hosting for mods, addons, and user content for many popular games such as Minecraft, World of Warcraft, and Among Us.' />
                         <Sponsor name='Nodecraft' logo='./sponsor_nodecraft.png' link='https://nodecraft.com/r/mmd' description='Nodecraft offers quality server hosting for many games such as Minecraft, Rust, and Factorio.' />
                         <Sponsor name='MMD' logo='./sponsor_mmd.png' link='https://discord.mcmoddev.com/' description='Minecraft Mod Development is a safe community for mod authors to learn, improve their skills, and share their work.' />
                     </div>
