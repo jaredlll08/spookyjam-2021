@@ -46,3 +46,7 @@ h5 {
 h6 {
     @apply text-sm sm:text-lg;
 }
+
+.pixelated {
+    image-rendering: pixelated;
+}
