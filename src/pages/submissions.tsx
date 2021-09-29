@@ -79,6 +79,14 @@ export default function Home(props: StaticProps): ReactElement {
                 title: 'SpookyJam 2021',
                 description: 'An annual ModJam held in celebration of the fall season. Hosted by MMD.',
                 site_name: 'SpookyJam 2021',
+                images: [
+                    {
+                        url: `https://spookyjam.mcmoddev.com/og_image.png`,
+                        width: 400,
+                        height: 400,
+                        alt: `SpookyJam logo`,
+                    }
+                ]
             }}
             twitter={{
                 handle: '@MCModDev',
