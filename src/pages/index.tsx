@@ -97,28 +97,28 @@ export default function Home(): ReactElement {
 
                     <h2>Frequently Asked Questions</h2>
 
-                    <h4 className='mb-0 mt-4'>Can I submit multiple mods to this event?</h4>
+                    <h3 className='mb-0 mt-4'>Can I submit multiple mods to this event?</h3>
                     <p>Yes, you may create and submit multiple submissions to this event. If you are interested in doing this please take care of yourself and take steps to avoid stress and burnout.</p>
 
-                    <h4 className='mb-0 mt-4'>Can I join multiple teams?</h4>
+                    <h3 className='mb-0 mt-4'>Can I join multiple teams?</h3>
                     <p>Yes, you may join and contribute to multiple teams. If you are interested in doing this we recommend being transparent with all of your team mates about other teams you are contributing to.</p>
 
-                    <h4 className='mb-0 mt-4'>Can I submit the same mod for both Forge and Fabric?</h4>
+                    <h3 className='mb-0 mt-4'>Can I submit the same mod for both Forge and Fabric?</h3>
                     <p>Yes, you may support both Forge and Fabric with your submission. These submissions will be eligible for the Top 3 Forge and Top 3 Fabric categories but may only place in one of those categories. Please be advised that supporting both loaders is completely optional. Doing so will require additional effort and may be stressful. If you're still interested in doing this we recommend checking out the useful <NavLink title='MultiLoader-Template' location='https://github.com/jaredlll08/MultiLoader-Template' inline={true} />.</p>
 
-                    <h4 className='mb-0 mt-4'>I am not a mod author, how can I participate?</h4>
+                    <h3 className='mb-0 mt-4'>I am not a mod author, how can I participate?</h3>
                     <p>Everyone is welcome to participate in SpookyJam. One of the easiest ways to join in is by giving participants feedback and encouragement or play with the mods on the public event Minecraft server. If you're looking to get more involved with the event you may be able to help with translating submissions, helping with textures, or contributing in other ways. SpookyJam is also a great opportunity to learn more about mod development and try to make your own mod.</p>
 
-                    <h4 className='mb-0 mt-4'>Can I submit a mod from previous SpookyJam events?</h4>
+                    <h3 className='mb-0 mt-4'>Can I submit a mod from previous SpookyJam events?</h3>
                     <p>Yes, previous year entries that have been updated can be resubmitted. These entries will not be eligible for prizes and will not receive the same level of promotion that new submissions receive however they may be included on our Modpack and public server.</p>
 
-                    <h4 className='mb-0 mt-4'>Do Pull Requests count as being a team member?</h4>
+                    <h3 className='mb-0 mt-4'>Do Pull Requests count as being a team member?</h3>
                     <p>Creating a Pull Request does not inherently make you a member of that team. The team list is ultimately up to that team and the member who is submitting their submission. The main time event organizers will step in is when the Pull Request System is being abused to bypass event rules.</p>
 
-                    <h4 className='mb-0 mt-4'>Would accepting a Pull Request from an ineligible person make my project ineligible for prizes?</h4>
+                    <h3 className='mb-0 mt-4'>Would accepting a Pull Request from an ineligible person make my project ineligible for prizes?</h3>
                     <p>Accepting minor Pull Requests from an ineligible person is fine. A minor Pull Request in this context would be along the lines of fixing a typo, resource optimization, or localizing the mod to another language.</p>
 
-                    <h4 className='mb-0 mt-4'>Does the mod need to be published on CurseForge?</h4>
+                    <h3 className='mb-0 mt-4'>Does the mod need to be published on CurseForge?</h3>
                     <p>We are only accepting mods that have been published to CurseForge. Having this requirement allows us to streamline the process of publishing the modpack and having players connect to our servers.</p>
                 </div>
 
