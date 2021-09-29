@@ -4,6 +4,7 @@ import NavLink from "components/NavLink";
 import TimeTableLoader from '../components/timetable_loader'
 import Sponsor from "components/Sponsor";
 import { NextSeo } from 'next-seo'
+import TimeTable from "../components/timetable";
 
 export default function Home(): ReactElement {
 
@@ -44,7 +45,7 @@ export default function Home(): ReactElement {
 
                 <div id='timetable'>
                     <h2>Event Timetable</h2>
-                    <TimeTableLoader />
+                    <TimeTable />
                 </div>
 
                 <br />
