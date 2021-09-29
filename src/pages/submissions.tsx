@@ -5,6 +5,7 @@ import {ModProps} from "../components/CurseMod";
 import SubmissionBox from "components/SubmissionsBox";
 import axios from 'axios';
 import NavLink from "../components/NavLink";
+import {NextSeo} from "next-seo";
 
 const projectIds = {
 
@@ -68,7 +69,29 @@ const projectIds = {
 
 export default function Home(props: StaticProps): ReactElement {
 
-    return (
+    return (<>
+        <NextSeo
+            title="SpookyJam 2021"
+            description="An annual ModJam held in celebration of the fall season. Hosted by MMD."
+            canonical="https://spookyjam.mcmoddev.com/submissions"
+            openGraph={{
+                url: 'https://spookyjam.mcmoddev.com/submissions',
+                title: 'SpookyJam 2021',
+                description: 'An annual ModJam held in celebration of the fall season. Hosted by MMD.',
+                site_name: 'SpookyJam 2021',
+            }}
+            twitter={{
+                handle: '@MCModDev',
+                cardType: 'summary_large_image',
+            }}
+
+            additionalMetaTags={[
+                {
+                    name: 'theme-color',
+                    content: '#a16207'
+                }
+            ]}
+        />
         <Layout title = "Submissions">
             <div className="bg-gray-800 text-gray-200 text-xl flex flex-col gap-y-5">
 
@@ -83,6 +106,7 @@ export default function Home(props: StaticProps): ReactElement {
                 <SubmissionBox name = "2017" entries = { props.seventeen } />
             </div>
         </Layout>
+        </>
     );
 }
 
