@@ -1,5 +1,5 @@
 import React, {ReactElement} from "react";
-
+import Image from "next/image";
 
 interface Author  { name: string, url: string }
 
@@ -30,7 +30,7 @@ export default function ModCard({modData} : {modData:ModProps}): ReactElement {
     return (
         <div className="flex gap-x-4 p-2 border-2 border-yellow-700 bg-yellow-900 bg-opacity-25">
 
-            <img src={modData.logo} className="hidden lg:block flex-none w-32 h-32 my-auto bg-[#1F1F1F] border border-yellow-700" width="128px" height="128px" alt={modData.name}/>
+            <Image src={modData.logo} width={128} height={128} className="hidden lg:block flex-none w-32 h-32 my-auto bg-[#1F1F1F] border border-yellow-700" alt={`${modData.name} logo`}/>
 
             <div className="flex-grow">
                 <a className="text-xl sm:text-2xl lg:text-3xl hover:text-yellow-600 font-medium" href={modData.homepage} target={"_blank"} rel="noreferrer">{truncate(modData.name, 25)}</a>
