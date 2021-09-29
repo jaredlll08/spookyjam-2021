@@ -32,6 +32,7 @@
     "react/prop-types": 0,
     "no-unused-vars": "off",
     "react/no-unescaped-entities": 0,
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "@next/next/no-document-import-in-page": "off"
   }
 }
