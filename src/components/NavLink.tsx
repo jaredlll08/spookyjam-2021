@@ -8,7 +8,7 @@ export default function NavLink({title, location, classNames = "", target = "_bl
     if (location.startsWith("http") || location.startsWith("#") ) {
 
         return (
-            <a className={classes} href={location} target={target}>{title}</a>
+            <a className={classes} href={location} target={target} rel = {`noopener noreferrer`}>{title}</a>
         );
     }
 
