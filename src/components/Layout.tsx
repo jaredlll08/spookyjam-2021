@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, {ReactElement} from "react";
 import Navbar from "./Navbar";
 
 export interface LayoutProps {

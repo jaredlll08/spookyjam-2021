@@ -1,6 +1,5 @@
-import { useState } from "react";
+import {useState} from "react";
 import NavLink from "./NavLink";
-import Image from "next/image";
 
 
 const navbarImage = "data:image/webp;base64,UklGRgwCAABXRUJQVlA4TP8BAAAvp0AEEC+gqG0jpvxh9V8O4wYmwmyj+cuNYgb3P4Jsm/ljzOAoBznCk/kPAD2JvPpmPUCOJMmNMxAGAA/8T/4Fuf8TuwZAtP++TPfsgbQgov8Q3EiSpATHqFZsyQW8woax8cnMxpGTO/g+MxNCQ4+wBuUMajMbbWhMXx/NBFu5Ycbkk9kAjEBjM4BGImGiB5MimrhpQOPTPJnJ64oLNwQqwg1US5M+BaTvC+t0k9cevKvZ4i2Crd4w4wSfpgHXxScKT4s+nCSg00lOJCdsOrB28fT1AY6t3TBf6VkmnhyvPvAhTgWJVjhh055ac3K4YU9yQaUDNaqNh9nCFpkO2NeiXf3k+tUS4cbW60GqbTo57cC/RmtBpWSZluQJp/NuXor58e3+IAD4U/v5+UEbbtjbKtnKTzpBlqPDJiYAILFEB760Ju2G7lu3FcnE2X7vZ010pe5ra9rXypKFT1KAZDcp1Tat+n6TZKi1aukmBeQWsifKzZ2d15OjmwJSiycqWaY/9aS7CPqPbf9RsSfUWOoJp7Kp11yW3banrWhP9FLe0EnImUOv/3vkhE0hip/IiMkNrHj623xy6jYAJfwQIJqIKHEThTHaeK9D4g2bVp6h3qNeHsEdEX3YpPXhr0KbWuIN2RU+5Wc249Q/c87x3Tn3pERE3ESLcJ58nXK1hBsyAA=="

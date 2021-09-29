@@ -1,6 +1,5 @@
-import React, { ReactElement } from "react";
-import { useEffect } from "react";
-import ModCard, { ModProps } from "../components/CurseMod";
+import React, {ReactElement, useEffect} from "react";
+import ModCard, {ModProps} from "../components/CurseMod";
 
 export interface BoxProps {
 

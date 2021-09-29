@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, {ReactElement} from "react";
 
 export default function Timer({ days, hours, minutes, seconds }: { days: number, hours: number, minutes: number, seconds: number }): ReactElement {
 

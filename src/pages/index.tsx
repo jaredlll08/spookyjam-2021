@@ -1,9 +1,8 @@
-import React, { ReactElement, ReactNode } from "react";
+import React, {ReactElement} from "react";
 import Layout from "../components/Layout";
 import NavLink from "components/NavLink";
-import TimeTableLoader from '../components/timetable_loader'
 import Sponsor from "components/Sponsor";
-import { NextSeo } from 'next-seo'
+import {NextSeo} from 'next-seo'
 import TimeTable from "../components/timetable";
 
 export default function Home(): ReactElement {
