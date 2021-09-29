@@ -17,7 +17,7 @@ function renderTimer(props: CountdownRenderProps): ReactNode {
 }
 
 function pluralize(text: string, time: number): string {
-    if(time === 1) {
+    if(time !== 1) {
         text += "s";
     }
     return text;
