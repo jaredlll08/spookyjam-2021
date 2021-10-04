@@ -9,7 +9,9 @@ import {NextSeo} from "next-seo";
 
 const projectIds = {
 
-    twentyone: [],
+    twentyone: [
+        533254
+    ],
 
     twenty: [
         410697,
