@@ -128,6 +128,15 @@ export default function Home(): ReactElement {
 
                     <h3 className='mb-0 mt-4'>Does the mod need to be published on CurseForge?</h3>
                     <p>We are only accepting mods that have been published to CurseForge. Having this requirement allows us to streamline the process of publishing the modpack and having players connect to our servers.</p>
+                    
+                    <h3 className='mb-0 mt-4'>Can I submit a mod that I did not create?</h3>
+                    <p>No. Only the authors of a project may submit it to SpookyJam.</p>
+                    
+                    <h3 className='mb-0 mt-4'>How should teams submit their project?</h3>
+                    <p>Teams should select one team member to submit their project. Submitting the same project multiple times is not needed.</p>
+                    
+                    <h3 className='mb-0 mt-4'>Do I need to submit my project?</h3>
+                    <p>Yes you must submit your project before the end of the event. You can submit your project <NavLink title='here' location='https://forms.gle/mkKt2TC8PdpVbzVx9' inline={true} />.</p>
                 </div>
 
                 <div id='sponsors'>
