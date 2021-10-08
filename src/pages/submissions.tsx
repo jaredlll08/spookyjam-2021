@@ -10,8 +10,9 @@ import {NextSeo} from "next-seo";
 const projectIds = {
 
     twentyone: [
-        533254
-        534052
+        533254,
+        534052,
+        534284
     ],
 
     twenty: [
